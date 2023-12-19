@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html , body {
+	height: 100%;
+	background: rgb(31, 31, 31);
+}
+
+#sec {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	background-color: blueviolet;
+	width: 40%;
+	height: 60%;
+	border: 2px solid #ccc;
+	border-radius: 2%;
+	padding: 2%;
+}
+
+
+#display {
+	width: 100%;
+	height: 16%;
+	background-color: rgb(31, 31, 31);;
+	border-radius: 5%;
+	border: 2px solid #ccc;
+	color: white;
+	line-height: 50px;
+	font-size: 40px;
+	text-align: right;
+	padding: 5%;
+}
+
+#numbers {
+	width: 80%;
+	height: 100%;
+	float: left;
+}
+
+#math {
+	width: 20%;
+	float: right;
+}
+#numbers input[type=button] {
+	width: 32%;
+	height: calc(100% / 4);
+	
+}
+
+#math input[type=button] {
+	width: 70px;
+	height: 60px;
+}

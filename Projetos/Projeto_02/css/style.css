@@ -1,0 +1,193 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+html,body{
+	height: 100%;
+}
+/*********/
+.clear{
+	clear: both;
+}
+.container{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+/*********/
+header{
+	background-color: rgb(180,180,180);
+	padding: 18px 2% 22px 2%;
+}
+.logo-1{
+	float: left;
+	width: 160px;
+	height: 60px;
+	background-image: url('../imagens/logo1.png');
+	/*background-color: purple;*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.logo-2{
+	float: right;
+	width: 160px;
+	height: 60px;
+	background-image: url('../imagens/logo2.png');
+	/*background-color: green;*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+section.cover-form{
+	width: 100%;
+}
+.bg{
+	background-image: url('../imagens/bg-form.jpg');
+	height: 540px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.form-container{
+	width: 400px;
+	height: 105%;
+	right: 30px;
+	background-color: white;
+	top: -2.5%;
+	background-color: white;
+	box-shadow: 1px 2px 1px 1px rgb(180,180,180);
+	position: absolute;
+}
+.form-container h2{
+	background-color: rgb(210,210,210);
+	padding: 25px 15px;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+}
+.form-container form{
+	margin-top: 20px;
+	padding: 15px;
+}
+.form-container form p{
+	font-size: 14px;
+	color: #525252;
+}
+.form-wraper:not(:first-child){
+	margin-top: 40px;
+}
+.form-wraper:last-child{
+	margin-top: 20px;
+}
+.form-container form input[type=text]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 10px;
+}
+.form-container form input[type=submit]{
+	background-color: #29526d;
+	text-transform: uppercase;
+	color: white;
+	width: 100%;
+	cursor: pointer;
+	height: 50px;
+	font-size: 25px;
+	border: 0;
+}
+section.chamada{
+	text-align: center;
+	width: 100%;
+}
+section.chamada div.container{
+	background-color: #29526d;
+	padding: 50px 0 50px 0;
+}
+section.chamada h2{
+	display: inline-block;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	width: 98%;
+	max-width: 700px;
+}
+section.chamada p{
+	color: white;
+	padding-top: 15px;
+	font-size: 22px;
+	font-weight: bold;
+	width: 98%;
+}
+.flex-mosaico{
+	display: flex;
+}
+.item-1-mosaico{
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+	padding-top: 25%;
+}
+.item-2-mosaico{
+	width: 40%;
+	padding: 100px 40px;
+	background-color: #4683ab;
+}
+.item-2-mosaico p{
+	color: white;
+}
+footer{
+	padding: 20px 0;
+	background-color: #29526d;
+}
+footer p{
+	margin-top: 8px;
+	color:white;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+footer img{
+	width: 120px;
+	margin: 10px 10px;
+}
+@media screen and (max-width: 960px){
+	.bg{
+		text-align: center;
+	}
+	.form-container{
+		position: static;
+		display: inline-block;
+		height: 100%;
+		width: 96%;
+		max-width: 400px;
+	}
+}
+@media screen and (max-width: 768px){
+	.flex-mosaico{
+		display: block;
+	}
+	.item-1-mosaico{
+		width: 100%;
+		padding-top: 60%;
+	}
+	.item-2-mosaico{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 510px){
+	header{
+		text-align: center;
+		padding: 40px 0;
+		height: auto;
+	}
+	[class^="logo"]{
+		float: none;
+		display: inline-block;
+		margin-top: 10px;
+	}
+}

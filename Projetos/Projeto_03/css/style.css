@@ -1,0 +1,564 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+.clear{
+    clear: both;
+}
+
+/********************************/
+
+header{
+    width: 100%;
+    height: 90vh;
+    background-image: url('../images/capa.png');
+    /*max-height: 700px;*/
+    background-size: cover;
+    background-position: center;
+    font-weight: 300;
+    min-height: 800px;
+    
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header nav{
+    float: right;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #472562;
+    height: 80px;
+    line-height: 81px;
+}
+nav.mobile-menu{
+    cursor: pointer;
+    display: none;
+    width: 45px;
+    height: 45px;
+    background-image: url('../images/menu.png');
+    background-size: 100% 100%;
+}
+nav.mobile-menu ul{
+    display: none;
+    position: absolute;
+    width:120px;
+    list-style-type: none;
+    background-color: #472562;
+    text-align: center;
+    top: 5px;
+    left: 55px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+nav.mobile-menu ul li{
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+}
+nav.mobile-menu ul li:hover{
+    background-color: #7d4da3;
+    border-radius: 5px;
+}
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+header .logo{
+    width: 160px;
+    height: 50px;
+    float: left;
+    background-image: url('../images/Barbie_Logo.svg.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 12px;
+}
+
+header nav.desktop-menu ul{
+    list-style-type: none;
+}
+header nav.desktop-menu li{
+    float: right;
+    padding: 0 30px;
+}
+header nav.desktop-menu li a{
+    color: white;
+    text-decoration: none;
+
+}
+.chamada1{
+    max-width: 600px;
+    float: right;
+    padding: 30vh 4%;
+}
+.chamada1 h2{
+    font-size: 40px;
+    color:white;
+    font-weight: normal;
+    font-weight: 300;
+}
+.chamada1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+/*******************************/
+
+section.sessao1{
+    width: 100%;
+    background-color: #472562;
+    padding: 0px 2%;
+    height: 400px;
+    border-top: 2px solid white;
+}
+section.sessao1 .container{
+    max-width: 1000px;
+    height: calc(100% + 30px);
+}
+.texto-sessao1{
+    float: left;
+    color:white;
+    width: 50%;
+    margin-top: 60px;
+    padding-left: 80px;
+    position: relative;
+    left: 65px;
+}
+.texto-sessao1 h2{
+    font-weight: 300;
+    font-size: 26px;
+}
+.texto-sessao1 p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.texto-sessao1 ul{
+    font-size: 15px;
+    list-style-position: outside;
+    padding-left: 15px;
+}
+.texto-sessao1 ul li{
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+.btn1-texto{
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 30px;
+    font-size:18px;
+    border: 2px solid white;
+}
+.btn1-texto:hover{
+    background-color: #d1572c;
+}
+
+.device-sessao1{
+    float: left;
+    width: 50%;
+    background-image: url('../images/device.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    position: relative;
+    top: -30px;
+}
+
+/*******************************/
+
+.sessao2{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.6);
+    position: relative;
+    border-top: 2px solid white;
+}
+.sessao2 .container{
+    max-width: 1000px;
+}
+.sessao2 h2{
+    color: white;
+    font-weight: 300;
+    margin-top: 40px;
+}
+.sessao2 p{
+    margin-top: 30px;
+    width: 100%;
+    display: inline-block;
+    color: white;
+}
+.sessao2 img{
+    width: 100%;
+    border-radius: 7px;
+    position: relative;
+    top: 70px;
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.6);
+}
+
+/*****************************/
+
+.sessao3{
+    width: 100%;
+    height: 100%;
+    max-height: 360px;
+}
+.part1{
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #835fa7);
+    color: white;
+    height: 100%;
+    border-right: 2px solid white;
+}
+.wraper-part1{
+    max-width: 600px;
+    float: right;
+    padding: 0 30px;
+}
+.part1 h2{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 23px;
+}
+.part1 p{
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+.part2{
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-image: linear-gradient(to top, #835fa7 5%, rgba(0, 0, 0, 0.6) 95%); 
+    height: 360px; 
+    border-left: 2px solid white; 
+}
+.scrollEquipe{
+    max-width: 600px;
+    padding: 0 30px;
+    overflow: hidden;
+}
+.scroll-wraper{
+    width: 100%;
+}
+.sobre-autor{
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+}
+.titulo-autor{
+    width: 100%;
+    float: left;
+}
+.wraper-titulo-autor{
+    float: left;
+}
+.titulo-autor h2{
+    padding-right: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 23px;
+    color: white;
+}
+.titulo-autor p{
+    font-size: 13px;
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+}
+.titulo-autor .img-autor{
+    float: left;
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    position: relative;
+    top: 4px;
+    left: 8px;
+    background-image: url('../images/Imgur.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.texto-autor{
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+}
+.texto-autor p{
+    font-size: 15px;
+    margin-top: 10px;
+    color: white;
+}
+.slider-bullets{
+    float: left;
+    margin-top: 8px;
+    width: 100%;
+    margin-top: 12px;
+    padding-left: 50px;
+}
+.slider-bullets span{
+    width: 16px;
+    height: 16px;
+    background-color: gray;
+    border-radius: 8px;
+    margin-right: 8px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/******************************/
+
+.sessao4{
+    background-color: #835fa7;
+    padding: 100px 0;
+
+}
+.form{
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 10px;
+}
+.form h2{
+    font-size: 23px;
+    font-weight: 300;
+}
+.form p{
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 400px;
+}
+.form form{
+    margin-top: 15px;
+}
+.form form input[type=text]{
+    width: 90%;
+    max-width: 480px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgba(200, 200, 200, 1.0);
+    margin-top: 8px;
+}
+.form form textarea{
+    margin-top: 8px;
+    width: 90%;
+    max-width: 480px;
+    border: 1px solid rgba(200, 200, 200, 1.0);
+    height: 160px;
+}
+.form form input[type=submit]{
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 30px;
+    font-size:18px;
+    border: 2px solid white;
+}
+.form form input[type=submit]:hover{
+    background-color: #d1572c;
+}
+.map-wraper{
+    width: 50%;
+    float: left;
+    color: white;
+    padding: 0 10px;
+}
+.map-wraper h2{
+    font-size: 23px;
+    font-weight: 300;
+    color: white;
+}
+.map-wraper3{
+   width: 100%; 
+   max-width: 480px;
+   position: relative;
+   margin-top: 10px;
+}
+.map-wraper2{
+   margin-top: 10px; 
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding-top: 100%; 
+   width: 100%;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 5px solid rgba(200, 200, 200, 1.0);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+footer{
+    padding: 40px 2%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top: 2px solid white;
+    color: white;
+}
+footer p:nth-of-type(1){
+    float: left;
+    font-size: 14px;
+}
+footer p:nth-of-type(2){
+    float: right;
+    font-size: 14px;
+}
+/*****************************/
+
+@media screen and (max-width: 830px){
+    .chamada1{
+        max-width: none;
+        float: none;
+        margin: 0;
+        padding: 30vh 0;
+        width: 100%;
+        text-align: center;
+    }
+    .chamada1 h2{
+        font-size: 30px;
+        color: white;
+        font-weight: normal;
+        font-weight: 300;
+        padding: 0;
+    }
+    .chamada1 p{
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 40vh;
+        padding: 25px 2%;
+    }
+    nav.desktop-menu{
+        display: none;
+    }
+    nav.mobile-menu{
+        display: block;
+    }
+    section.sessao1{
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+    .texto-sessao1{
+        float: none;
+        margin-top: 0;
+        position: static;
+        display: inline-block;
+        width: 100%;
+        padding-left: 0;
+    }
+    .texto-sessao1 ul{
+        display: inline-block;
+        margin: 20px;
+    }
+    .texto-sessao1 ul li{
+        float: none;
+        text-align: left;
+    }
+    .btn1-texto{
+        display: inline-block;
+    }
+    .device-sessao1{
+        display: none;
+    }
+    .sessao2{
+        padding: 20px 2%;
+        top: 0;
+    }
+    .sessao2 h2{
+        margin-top: 5px;
+    }
+    .sessao4 .container{
+        text-align: center;
+    }
+    .form{
+        width: 100%;
+        float: none;
+    }
+    .form p{
+        display: inline-block;
+    }
+    .map-wraper{
+        width: 100%;
+        float: none;
+        margin-top: 40px;
+        padding: 0 4%;
+    }
+    .map-wraper h2{
+        padding-top: 20px;
+    }
+    .map-wraper3{
+        width: 80%; 
+        max-width: none;
+        position: relative;
+        margin-top: 10px;
+        display: inline-block;
+        padding-top: 80%;
+    }
+    .map-wraper2{
+        margin-top: 10px; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 0%; 
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 580px){
+    .part1{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .part2{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .sessao2 img{
+        margin-top: 20px;
+        top: 10px;
+    }
+    footer{
+        text-align: center;
+    }
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    footer p:nth-of-type(2){
+        float: none;
+        padding-top: 10px;
+    }
+}
