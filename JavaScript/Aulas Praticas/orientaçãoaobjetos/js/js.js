@@ -19,22 +19,30 @@ animal2 = new Animal("gato","8a","5kg")
 
 
 class Animal {
-    constructor(nome) {
-        this.nome = nome
-    }
-    printNome() {
-        return this.nome
-    }
+    constructor(espec) {
+        this.espec = espec
+        }
+        printEspec() {
+            return this.espec
+        }
 }
+
+animal = new Animal()
+
+animal2 = new Animal('Gato','F')
 
 class Cachorro extends Animal {
-    constructor(nome) {
-        super(nome)
+    constructor(espec,nome,raca,idade,peso,cor) {
+        super(espec)
+        this.nome = nome
+        this.raca = raca
+        this.idade = idade
+        this.peso = peso
+        this.cor = cor
     }
 }
 
+cachorro = new Cachorro('Cachorro','Meg','PitBull','4a','16kg','Preto')
 
+alert(cachorro.cor)
 
-cachorro = new Cachorro('Pitbul')
-
-alert(cachorro.printNome())
