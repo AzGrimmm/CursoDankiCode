@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main h1 span {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main p {
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+}
+
+.mostrar {
+    height: 200px !important;
+}
