@@ -29,7 +29,7 @@ class Animal {
 
 animal = new Animal()
 
-animal2 = new Animal('Gato','F')
+animal2 = new Animal('Gato')
 
 class Cachorro extends Animal {
     constructor(espec,nome,raca,idade,peso,cor) {

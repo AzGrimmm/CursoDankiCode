@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main span {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main p {
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.mostrar {
+    height: 200px;
+}
